@@ -19,5 +19,5 @@ buttons_menu = ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
 btn_calendar = KeyboardButton(text='Add calendar', callback_data="calendar_btn")
 btn_docs = KeyboardButton(text='Add docs', callback_data="docs_btn")
 btn_sheets = KeyboardButton(text='Add sheets', callback_data="sheets_btn")
-add_services = [[btn_calendar, btn_docs]]
+add_services = [[btn_calendar, btn_docs], [main_menu]]
 services_menu = ReplyKeyboardMarkup(keyboard=add_services, resize_keyboard=True)
