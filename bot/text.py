@@ -1,4 +1,5 @@
-greet = "Hello, {name}! I am a bot that can generate meeting minutes and create tasks that were discussed."
+greet = ('Hello, {name}! I am a bot that can generate meeting minutes and create tasks that were discussed.\n '
+         'To start generation, click the "Generate" button.')
 
 greet_0 = ("Привет, {name}! Выбери удобный язык:\n"
            "\n"
@@ -8,4 +9,3 @@ greet_en = "I am a bot that will help you..."
 
 service_text = "This is a menu where you can connect various services for displaying meeting summaries and recording tasks."
 generate_text = "To start generating a meeting protocol, upload it in a format convenient for you (text, audio, video)."
-
