@@ -1,5 +1,4 @@
 import logging  # библиотека для сохранения логов ошибок в файл
-from config import LOG_FILE
 from dotenv import load_dotenv
 import os
 load_dotenv()
@@ -14,5 +13,6 @@ def setup_logging():
             logging.StreamHandler()
         ]
     )
+
 
 logger = logging.getLogger(__name__)
