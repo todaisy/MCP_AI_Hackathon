@@ -1,6 +1,21 @@
 from dataclasses import dataclass, field
 import datetime
 import psycopg2 as psy
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+# Подключение к существующей БД
+def get_db_connection():
+    return psy.connect(
+        dbname=os.getenv("DATABASE_URL").split('/')[-1],
+        user=os.getenv("DATABASE_URL").split(':')[1][2:],
+        password=os.getenv("DATABASE_URL").split(':')[2].split('@')[0],
+        host=os.getenv("DATABASE_URL").split('@')[1].split(':')[0],
+        port=os.getenv("DATABASE_URL").split(':')[3].split('/')[0]
+    )
 
 
 @dataclass
@@ -44,6 +59,7 @@ class User:
 
 @dataclass
 class Handlers:
+    # id: int
     user_id: int
     id_mess_input: int
     time_input: datetime.datetime
