@@ -1,11 +1,12 @@
-import asyncio
 import datetime
 import json
 from yandex_neural_api.client import YandexNeuralAPIClient
-from config_beforeOS import TOKEN, FOLDER
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-token = TOKEN
-folder = FOLDER
+token = os.getenv('TOKEN')
+folder = os.getenv('FOLDER')
 client = YandexNeuralAPIClient(token, folder)
 
 
