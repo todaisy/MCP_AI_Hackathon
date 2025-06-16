@@ -1,6 +1,6 @@
 # MeetFlow AI
 
-Ссылка на приложение:
+Ссылка на приложение: https://t.me/MeetFlowAIBot
 
 Ссылка на презентацию: https://github.com/todaisy/MCP_AI_Hackathon/blob/main/Presentation_Error505_MeetFlowAI.pdf
 (презентация в этом же репозитории)
