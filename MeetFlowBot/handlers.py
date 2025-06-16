@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 import kb
 import models
 import text
-from config_beforeOS import conn
 from logging_config import logger
 from neiro import handle_tool_call_async
 from functions import get_dates, file_to_text, text_to_docx, text_to_pdf
@@ -16,6 +15,7 @@ import datetime
 import json
 
 router = Router()
+conn = models.get_db_connection()
 load_dotenv()
 
 
